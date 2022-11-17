@@ -1,0 +1,7 @@
+<table id="myTable" style="width:100%" class="dataTables_wrapper"><thead><tr><th><?=$_LNG['license']['application']?></th><th><?=$_LNG['license']['serial']?></th><th><?=$_LNG['license']['create_at']?></th><th><?=$_LNG['license']['type']?></th><th><?=$_LNG['license']['expire_at']?></th><th><?=$_LNG['license']['status']?></th><th><?=$_LNG['manage']['license']['create_by']?></th><th><?=$_LNG['license']['do']?></th></tr></thead><tbody><?=$_HTML['table']?></tbody><tfoot><tr><th><?=$_LNG['license']['application']?></th><th><?=$_LNG['license']['serial']?></th><th><?=$_LNG['license']['create_at']?></th><th><?=$_LNG['license']['type']?></th><th><?=$_LNG['license']['expire_at']?></th><th><?=$_LNG['license']['status']?></th><th><?=$_LNG['manage']['license']['create_by']?></th><th><?=$_LNG['license']['do']?></th></tr></tfoot></table>
+
+<script>
+$(document).ready( function () {
+    $('#myTable').DataTable();
+} );
+</script>

@@ -1,0 +1,38 @@
+<table id="myTable" style="width:100%" class="dataTables_wrapper"><thead><tr><th>#</th><th><?=$_LNG['manage']['application']['name']?></th><th><?=$_LNG['manage']['application']['diff_info']?></th><th><?=$_LNG['manage']['do']?></th></tr></thead><tbody><?=$_HTML['table']?></tbody><tfoot><tr><th>#</th><th><?=$_LNG['manage']['application']['name']?></th><th><?=$_LNG['manage']['application']['diff_info']?></th><th><?=$_LNG['manage']['do']?></th></tr></tfoot></table>
+
+<script>
+$(document).ready( function () {
+    $('#myTable').DataTable();
+} );
+</script>
+<br/><br/>
+<form method=post>
+  <fieldset>
+    <legend><?=$_LNG['manage']['application']['create']?></legend>
+    <div class="form-group">
+      <label><?=$_LNG['manage']['application']['name']?></label>
+	  <input type="text" class="form-control" name="name" autocomplete="off">
+    </div>
+    <div class="form-group">
+      <label><?=$_LNG['manage']['application']['diff_day']?></label>
+	  <input type="number" class="form-control" name="d" autocomplete="off">
+    </div>
+    <div class="form-group">
+      <label><?=$_LNG['manage']['application']['diff_week']?></label>
+	  <input type="number" class="form-control" name="w" autocomplete="off">
+    </div>
+    <div class="form-group">
+      <label><?=$_LNG['manage']['application']['diff_month']?></label>
+	  <input type="number" class="form-control" name="m" autocomplete="off">
+    </div>
+    <div class="form-group">
+      <label><?=$_LNG['manage']['application']['diff_season']?></label>
+	  <input type="number" class="form-control" name="s" autocomplete="off">
+    </div>
+    <div class="form-group">
+      <label><?=$_LNG['manage']['application']['diff_year']?></label>
+	  <input type="number" class="form-control" name="y" autocomplete="off">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </fieldset>
+</form>

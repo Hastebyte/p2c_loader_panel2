@@ -1,0 +1,46 @@
+    <div class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <div class="container">
+        <a href="../" class="navbar-brand"><?=@$_G['Site_Name']?></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="<?=http_url?>license/list"><?=$_LNG['nav']['license/list']?></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="<?=http_url?>license/new"><?=$_LNG['nav']['license/new']?></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="<?=http_url?>license/bulk"><?=$_LNG['nav']['license/bulk']?></a>
+            </li>
+			<?php if($_SESSION['login']=="1"){ ?>
+            <li class="nav-item">
+              <a class="nav-link" href="<?=http_url?>manage/accounts"><?=$_LNG['nav']['manage/accounts']?></a>
+            </li>
+			<!-- Admin Only -->
+            <li class="nav-item">
+              <a class="nav-link" href="<?=http_url?>manage/application"><?=$_LNG['nav']['manage/application']?></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="<?=http_url?>manage/license"><?=$_LNG['nav']['manage/license']?></a>
+            </li>
+			<?php } ?>
+			
+			
+          </ul>
+			<ul class="nav navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="<?=http_url?>accounts/password"><?=$_LNG['nav']['accounts/password']?></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="<?=http_url?>logout"><?=$_LNG['nav']['logout']?></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div><br/><br/><br/>
+
+
+    <div class="container">

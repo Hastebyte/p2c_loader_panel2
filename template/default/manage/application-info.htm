@@ -1,0 +1,31 @@
+
+<form method=post>
+  <fieldset>
+    <legend><?=$_LNG['manage']['application']['create']?></legend>
+    <div class="form-group">
+      <label><?=$_LNG['manage']['application']['name']?></label>
+	  <input type="text" class="form-control" placeholder="<?=$res['name']?>" autocomplete="off" disabled="">
+    </div>
+    <div class="form-group">
+      <label><?=$_LNG['manage']['application']['diff_day']?></label>
+	  <input type="number" class="form-control" name="d" autocomplete="off" placeholder="<?=$res['d']?>">
+    </div>
+    <div class="form-group">
+      <label><?=$_LNG['manage']['application']['diff_week']?></label>
+	  <input type="number" class="form-control" name="w" autocomplete="off" placeholder="<?=$res['w']?>">
+    </div>
+    <div class="form-group">
+      <label><?=$_LNG['manage']['application']['diff_month']?></label>
+	  <input type="number" class="form-control" name="m" autocomplete="off" placeholder="<?=$res['m']?>">
+    </div>
+    <div class="form-group">
+      <label><?=$_LNG['manage']['application']['diff_season']?></label>
+	  <input type="number" class="form-control" name="s" autocomplete="off" placeholder="<?=$res['s']?>">
+    </div>
+    <div class="form-group">
+      <label><?=$_LNG['manage']['application']['diff_year']?></label>
+	  <input type="number" class="form-control" name="y" autocomplete="off" placeholder="<?=$res['y']?>">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </fieldset>
+</form>

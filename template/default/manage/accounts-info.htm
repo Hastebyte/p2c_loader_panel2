@@ -1,0 +1,33 @@
+
+<form method=post>
+  <fieldset>
+    <legend><?=$_LNG['manage']['user']['edit']?></legend>
+    <div class="form-group">
+      <label><?=$_LNG['manage']['user']['username']?></label>
+	  <input type="text" class="form-control" autocomplete="off" placeholder="<?=$res['name']?>" disabled="">
+    </div>
+    <div class="form-group">
+      <label><?=$_LNG['manage']['user']['pwd']?></label>
+	  <input type="password" class="form-control" name="pwd" autocomplete="off">
+    </div>
+    <div class="form-group">
+      <label><?=$_LNG['manage']['user']['day'].' '.$_LNG['manage']['user']['balance'] ?></label>
+	  <input type="number" class="form-control" name="day" autocomplete="off" placeholder="<?=$res['day']?>">
+    </div>
+    <div class="form-group">
+      <label><?=$_LNG['manage']['user']['week'].' '.$_LNG['manage']['user']['balance'] ?></label>
+	  <input type="number" class="form-control" name="week" autocomplete="off" placeholder="<?=$res['week']?>">
+    </div>
+    <div class="form-group">
+      <label><?=$_LNG['manage']['user']['month'].' '.$_LNG['manage']['user']['balance'] ?></label>
+	  <input type="number" class="form-control" name="month" autocomplete="off" placeholder="<?=$res['month']?>">
+    </div>
+    <div class="form-group">
+      <label><?=$_LNG['manage']['user']['total'].' '.$_LNG['manage']['user']['balance'] ?></label>
+	  <input type="number" class="form-control" name="limit_num" autocomplete="off" placeholder="<?=$res['limit_num']?>">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </fieldset>
+</form>
+<br/>
+<br/>
